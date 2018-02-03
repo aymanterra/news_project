@@ -2,8 +2,9 @@
 
 @section('content')
 
+<div class="col-md-10 offset-md-1">
 
-	<h1>Roles</h1>
+	<h1>Comments</h1>
 
 
 	<br>
@@ -43,6 +44,8 @@
 			</tbody>
         </table>
     </div>
+
+</div>
 
 @endsection
 
