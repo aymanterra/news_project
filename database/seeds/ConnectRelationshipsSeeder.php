@@ -22,7 +22,7 @@ class ConnectRelationshipsSeeder extends Seeder
 	     */
 		$permissions = Permission::all();
 
-		$userPermissions = Permission::whereIn('slug', ['view.news', 'create.news', 'create.comments'])->get();
+		$userPermissions = Permission::whereIn('slug', ['view.news', 'create.news', 'view.comments', 'create.comments'])->get();
 
 	    /**
 	     * Attach Permissions to Roles

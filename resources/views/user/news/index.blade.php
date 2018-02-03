@@ -7,7 +7,9 @@
   <div class="container">
     <h1 class="display-3">Hello, {{ auth()->user()->name }}!</h1>
     <p>Now you can Publish news and comment on a published news, but they will not appear untill Admin approve them.</p>
-    <p><a class="btn btn-primary btn-lg" href="/news/create" role="button">Add News &raquo;</a></p>
+    @if (auth()->user()->hasPermission('create.news'))
+      <p><a class="btn btn-primary btn-lg" href="/news/create" role="button">Add News &raquo;</a></p>
+    @endif
   </div>
 </div>
 
